@@ -1,0 +1,107 @@
+[
+  {
+    "id": "rep-1",
+    "siteName": "AeroJet Booking",
+    "siteUrl": "https://aerojet-flights-demo.com/checkout",
+    "patternType": "Pre-checked Boxes & Sneak Into Basket",
+    "category": "pre-checked",
+    "severityScore": 88,
+    "description": "Pre-selected $34 travel insurance checkbox and auto-added priority boarding without user consent.",
+    "screenshotUrl": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&auto=format&fit=crop&q=60",
+    "explanation": [
+      "The 'Comprehensive Flight Guard ($34.99)' checkbox is enabled by default in the passenger add-on screen.",
+      "The opt-out requires scrolling past three marketing paragraphs and unchecking a muted gray box.",
+      "The total price changes at the final payment step without a clear line-item difference callout."
+    ],
+    "recommendation": "Always uncheck optional add-on checkboxes before proceeding to payment, and compare the subtotal on step 1 with the final charge.",
+    "upvotes": 142,
+    "downvotes": 3,
+    "createdAt": "2026-03-20T10:30:00Z",
+    "tags": ["Airlines", "Pre-checked Boxes", "Hidden Fees", "Drip Pricing"],
+    "status": "verified"
+  },
+  {
+    "id": "rep-2",
+    "siteName": "FitStream Pro Club",
+    "siteUrl": "https://fitstream-fitness-demo.com/account/cancel",
+    "patternType": "Roach Motel & Confirmshaming",
+    "category": "roach-motel",
+    "severityScore": 95,
+    "description": "Subscription takes 1 click to join, but requires 6-step questionnaire, phone call during business hours, and emotional guilt buttons to cancel.",
+    "screenshotUrl": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&auto=format&fit=crop&q=60",
+    "explanation": [
+      "The 'Cancel Subscription' link is buried in fine print inside Settings > Billing > Advanced Preferences.",
+      "The confirmation button reads 'No thanks, I prefer being out of shape and losing my progress', while the cancel link is low-contrast gray text.",
+      "Final screen demands calling a toll phone line between 9am-12pm EST instead of providing automated online cancellation."
+    ],
+    "recommendation": "Use a virtual credit card or request a merchant block via your bank if online cancellation is deliberately obstructed.",
+    "upvotes": 289,
+    "downvotes": 5,
+    "createdAt": "2026-03-18T14:15:00Z",
+    "tags": ["Subscriptions", "Roach Motel", "Confirmshaming"],
+    "status": "verified"
+  },
+  {
+    "id": "rep-3",
+    "siteName": "GrandStay Resorts",
+    "siteUrl": "https://grandstay-hotels-demo.com/book/room-402",
+    "patternType": "Hidden Fees & Drip Pricing",
+    "category": "hidden-fees",
+    "severityScore": 82,
+    "description": "Advertised room rate was $119/night, but a mandatory $45 'Resort Experience Fee' and $18 'City Cleaning Levy' were injected on final step.",
+    "screenshotUrl": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&auto=format&fit=crop&q=60",
+    "explanation": [
+      "Initial search listings prominently show '$119 / night' with 'Taxes Included' misleading text.",
+      "Mandatory resort fee is only unveiled on page 4 after collecting credit card details.",
+      "Total price jumped from $238 to $364 for a 2-night stay with zero optional perks."
+    ],
+    "recommendation": "File a consumer protection complaint under drip pricing transparency regulations and verify all-in totals before authorizing cards.",
+    "upvotes": 194,
+    "downvotes": 2,
+    "createdAt": "2026-03-15T09:00:00Z",
+    "tags": ["Hotels", "Hidden Fees", "Drip Pricing"],
+    "status": "verified"
+  },
+  {
+    "id": "rep-4",
+    "siteName": "FastPass Concert Tickets",
+    "siteUrl": "https://fastpass-events-demo.com/tickets/live-tour",
+    "patternType": "Urgency Trap & Fake Scarcity",
+    "category": "urgency-trap",
+    "severityScore": 79,
+    "description": "High-pressure flashing countdown timer ('05:00 remaining before tickets are released!') resets back to 05:00 on page reload.",
+    "screenshotUrl": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=800&auto=format&fit=crop&q=60",
+    "explanation": [
+      "The timer is implemented purely client-side via JavaScript `setInterval` without server-side cart reservation.",
+      "Simulated notification popups claim 'Sarah from Chicago just purchased 4 tickets' every 12 seconds using random name arrays.",
+      "Creates artificial panic to prevent price comparison across ticket marketplaces."
+    ],
+    "recommendation": "Don't rush checkout decisions under flashing timers; refresh or check alternate vendor tabs to verify actual availability.",
+    "upvotes": 215,
+    "downvotes": 4,
+    "createdAt": "2026-03-12T17:45:00Z",
+    "tags": ["Events", "Urgency Trap", "Fake Scarcity"],
+    "status": "verified"
+  },
+  {
+    "id": "rep-5",
+    "siteName": "ElectroHub Direct",
+    "siteUrl": "https://electrohub-electronics-demo.com/cart",
+    "patternType": "Sneak Into Basket",
+    "category": "sneak-into-basket",
+    "severityScore": 76,
+    "description": "Adding a gaming laptop automatically placed a 2-year accidental damage insurance policy ($89.99) into the cart without asking.",
+    "screenshotUrl": "https://images.unsplash.com/photo-1498049794561-7780e7231661?w=800&auto=format&fit=crop&q=60",
+    "explanation": [
+      "The product page had no checkbox for the warranty, yet the checkout cart injected it as a bundled item.",
+      "The 'Remove' button for the warranty is styled as faint light gray text without standard trash icon.",
+      "Checkout button text says 'Proceed to 1-Click Pay' to discourage inspecting line items."
+    ],
+    "recommendation": "Inspect every line item in your cart before pressing payment authorization, especially on electronics retailers.",
+    "upvotes": 167,
+    "downvotes": 1,
+    "createdAt": "2026-03-10T11:20:00Z",
+    "tags": ["Retail", "Sneak Into Basket", "Hidden Costs"],
+    "status": "verified"
+  }
+]
